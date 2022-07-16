@@ -35,7 +35,7 @@ function App() {
     setItems([]);
     setIsAdding(true);
     setProductName('') ;
-    fetch('http://localhost:8081/listUsers').then(res => res.json()).then(res=>{
+    fetch('http://localhost:8081/listProducts').then(res => res.json()).then(res=>{
          var rows = [];
          if(res.length > 0){
           res.forEach(element => {
